@@ -1,6 +1,6 @@
 {
   "name": "@team-decorate/select-tiles",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "tile checkbox and radiobutton",
   "main": "dist/select-tiles.common.js",
   "unpkg": "dist/select-tiles.umd.js",
