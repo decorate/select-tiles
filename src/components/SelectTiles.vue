@@ -8,7 +8,7 @@
 
                 <input
                        class="select-tiles__input"
-                       :class="{'d-none': !inputShow}"
+                       :style="{display: isInputShow}"
                        :name="name"
                        :type="mode"
                        :id="item[idKey]"
@@ -36,6 +36,12 @@
             return {
                 tmp: [],
                 pick: null
+            }
+        },
+
+        computed: {
+            isInputShow() {
+                return(this.inputShow)? '' : 'none'
             }
         },
 
