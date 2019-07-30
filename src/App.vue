@@ -14,7 +14,7 @@
       　　　　<span>*</span>checkbox
       　　</template>
       </select-tiles>
-
+{{selected}}
       <select-tiles
               name="test2"
               :items="items"
@@ -28,12 +28,12 @@
       　　　　<span>*</span>checkbox
       　　</template>
       </select-tiles>
-
+{{selected2}}
       <select-tiles
               name="test3"
               :items="items"
               v-model="selected3"
-              value-key="id"
+              value-key="name"
               id-key="id"
               text-key="name"
               :old="[1]"
@@ -43,7 +43,7 @@
       　　    <span>*</span>radio button!!
       　　</template>
       </select-tiles>
-
+{{selected3}}
   </div>
 </template>
 

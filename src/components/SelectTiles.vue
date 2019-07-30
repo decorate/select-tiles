@@ -101,7 +101,11 @@
                 const check = e.target.checked
                 const value = e.target.value
 
-                if(check) {
+                if(this.mode === 'radio') {
+                    //radioボタンの時
+                    this.$set(this.selected, 0, this.tmp)
+                } else if(check) {
+                    //checkboxの時
                     linq.from(this.tmp).forEach((x, i) => {
                         this.$set(this.selected, i, x)
                     })
