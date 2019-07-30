@@ -1,7 +1,7 @@
 <template>
     <div class="select-tiles">
         <div class="">
-            <label v-if="$slots.label"><slot name="label"></slot></label><br>
+            <label class="select-tiles__title" v-if="$slots.label"><slot name="label"></slot></label><br>
             <label
                 class="select-tiles__label"
                 v-for="(item, i) in items">

@@ -111,3 +111,30 @@ or
 
 </script>
 ```
+
+### scss
+```scss
+.select-tiles {
+
+    &__title {
+    
+    }
+    
+    &__label {
+      margin-right: 10px;
+    }
+    //check時
+    .select-tiles__input:checked + .select-tiles__btn {
+      border-color: red;
+      color: red;
+    }
+    //default時
+    &__btn {
+      padding: 3px 7px;
+      border-radius: 5px;
+      border: 1px solid #909090;
+      color: #909090;
+    }
+}
+
+```
