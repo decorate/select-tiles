@@ -36,7 +36,7 @@
               value-key="name"
               id-key="id"
               text-key="name"
-              :old="[1]"
+              :old="['test5']"
               mode="radio"
       >
           <template slot="label">

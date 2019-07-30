@@ -92,7 +92,7 @@
                 })
             }
             if(this.mode == 'radio' && this.old) {
-                this.tmp = 1
+                this.tmp = this.old[0]
                 this.$set(this.selected, 0, this.tmp)
             }
         },
