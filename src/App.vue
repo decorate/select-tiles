@@ -40,6 +40,7 @@
               :old="['test5']"
               mode="radio"
               class-name="popo"
+              @checkStatus="status"
       >
           <template slot="label">
       　　    <span>*</span>radio button!!
@@ -65,6 +66,12 @@
                 selected: [],
                 selected2: [],
                 selected3: []
+            }
+        },
+        methods: {
+            status(status, value) {
+                console.log(status)
+                console.log(value)
             }
         },
         components: {

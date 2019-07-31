@@ -70,6 +70,22 @@ Or work on a Vue instance:
 |inputShow|Boolean|false|input hidden status|
 |old|Array|[]|initial value|
 
+### Event
+|name|argument|type|description|
+| ---- | ---- | ---- | ---- |
+|@checkStatus|(status, value)|(Boolean, ~)  |check status and value|
+```html
+<select-tiles
+    @checkStatus="getStatus" />
+``` 
+   ```javascript
+methods: {
+    getStatus(status, value) {
+        console.log(status)
+        console.log(value)
+    }
+},
+``` 
 
 ### Slot
     <slot name='label><span>※</span>checkbox!</slot>
@@ -80,7 +96,7 @@ or
     </template>
 
 
-###Change items key
+### Change items key
 
 ```html
 <select-tiles
