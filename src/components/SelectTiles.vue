@@ -107,7 +107,7 @@
                 const check = e.target.checked
                 const value = e.target.value
 
-                this.$emit('checkStatus', check, value);
+                this.$emit('checkStatus', check, this.tmp);
 
                 if(this.mode === 'radio') {
                     //radioボタンの時
