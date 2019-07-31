@@ -19,7 +19,7 @@
 
                 <div class="select-tiles__btn">
                     <span class="select-tiles__btn-text">{{item[textKey]}}</span>
-                    <span class="select-tiles__btn-secondText" v-if="secondText" >{{secondText}}</span>
+                    <span class="select-tiles__btn-secondText" v-if="secondTextKey" >{{item[secondTextKey]}}</span>
                 </div>
 
             </label>
@@ -84,7 +84,7 @@
                 type: Array,
                 default: []
             },
-            secondText: {
+            secondTextKey: {
                 type: String
             }
         },

@@ -23,7 +23,7 @@
               id-key="id"
               text-key="name"
               :old="['test1']"
-              second-text="second!!"
+              second-text-key="price"
       >
           <template slot="label">
       　　　　<span>*</span>checkbox
@@ -55,11 +55,11 @@
         data() {
             return {
                 items: [
-                    {id:1, name: 'test1'},
-                    {id:2, name: 'test2'},
-                    {id:3, name: 'test3'},
-                    {id:4, name: 'test4'},
-                    {id:5, name: 'test5'},
+                    {id:1, name: 'test1', price: 100},
+                    {id:2, name: 'test2', price: 1000},
+                    {id:3, name: 'test3',price: 10000},
+                    {id:4, name: 'test4',price: 10},
+                    {id:5, name: 'test5', price: 1},
                 ],
                 selected: [],
                 selected2: [],
