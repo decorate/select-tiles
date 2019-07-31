@@ -1,6 +1,6 @@
 <template>
     <div class="select-tiles">
-        <div class="">
+        <div :class="className">
             <label class="select-tiles__title" v-if="$slots.label"><slot name="label"></slot></label><br>
             <label
                 class="select-tiles__label"
@@ -64,7 +64,6 @@
             },
             textKey: {
                 default: 'value',
-                required: true
             },
             valueKey: {
                 default: 'value'
@@ -85,6 +84,9 @@
                 default: []
             },
             secondTextKey: {
+                type: String
+            },
+            className: {
                 type: String
             }
         },

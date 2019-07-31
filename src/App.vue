@@ -39,6 +39,7 @@
               text-key="name"
               :old="['test5']"
               mode="radio"
+              class-name="popo"
       >
           <template slot="label">
       　　    <span>*</span>radio button!!
