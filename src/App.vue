@@ -23,6 +23,7 @@
               id-key="id"
               text-key="name"
               :old="['test1']"
+              second-text="second!!"
       >
           <template slot="label">
       　　　　<span>*</span>checkbox
