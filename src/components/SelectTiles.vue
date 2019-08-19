@@ -2,6 +2,7 @@
     <div class="select-tiles">
         <div :class="className">
             <label class="select-tiles__title" v-if="$slots.label"><slot name="label"></slot></label><br>
+            <slot name="header"></slot>
             <label
                 class="select-tiles__label"
                 v-for="(item, i) in items">
